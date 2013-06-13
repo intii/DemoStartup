@@ -1,9 +1,10 @@
 define([
   // 'jquery',
 
+
   'backbone'
 ], function( Backbone){
-  var contactModel = Backbone.Model.extend({
+  var ContactModel = Backbone.Model.extend({
 
     // Model Constructor
     initialize: function() {
@@ -12,13 +13,13 @@ define([
 
     // Default values for all of the Model attributes
     defaults: {
-      lastname: null,
-      firstname:null,
-      phone: null,
-      address: null,
-      email: null,
+      lastname: 'Snow',
+      firstname:'John',
+      phone: '22223',
+      address: 'wall',
+      email: 'jsnow@elsitio.com.ar',
       photo:'http://www.facebooke-mail.com/profile/picture/profile-picture-default.jpg',
-      comments: null
+      comments: 'no comments'
     },
 
     // Gets called automatically by Backbone when the set and/or save methods are called (Add your own logic)
@@ -27,5 +28,5 @@ define([
     }
   });
   // Returns the contactModel class
-  return contactModel;
+  return ContactModel;
 });

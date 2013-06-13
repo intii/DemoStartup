@@ -19,7 +19,7 @@ define([
       },
 
       initialize: function() {
-        // this.listenTo(this.contacts, "add", this.appendNewContact);
+        this.listenTo(this.options.contacts, "add", this.appendNewContact);
         this.render();
       },
 
@@ -30,7 +30,7 @@ define([
       addContact: function() {
         //get the data from the fields and create new contact
         var newContact = new Contact();
-        this.contacts.add(newContact);
+        this.options.contacts.add(newContact);
       },
 
       appendNewContact: function(contact) {

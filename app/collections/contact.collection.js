@@ -1,5 +1,4 @@
 define([
-  // 'jquery',
   'backbone',
   'models/contact.model'
   ], function( Backbone, contact) {
