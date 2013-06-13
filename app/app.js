@@ -1,11 +1,13 @@
 define([
   'jquery',
   'underscore',
-  'backbone'
-], function($, _, Backbone){
-
+  'backbone',
+  'collections/contact.collection',
+  'views/agenda.view'
+], function($,_,Backbone,ContactCollection,AgendaView){
   var initialize = function(){
-    $('.main-content').html('initialized');
+    var contacts = new ContactCollection(),
+        agenda = new AgendaView({contacts : contacts});
   };
 
   return {

@@ -1,9 +1,8 @@
 define([
-  'jquery',
-  'underscore',
-  'backbone'
-], function($, _, Backbone){
+  // 'jquery',
 
+  'backbone'
+], function( Backbone){
   var contactModel = Backbone.Model.extend({
 
     // Model Constructor
