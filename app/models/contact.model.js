@@ -4,7 +4,7 @@ define([
   'backbone'
 ], function($, _, Backbone){
 
-  var contactModel = Backbone.Model.extend({
+  var ContactModel = Backbone.Model.extend({
 
     // Model Constructor
     initialize: function() {
@@ -28,5 +28,5 @@ define([
     }
   });
   // Returns the contactModel class
-  return contactModel;
+  return ContactModel;
 });

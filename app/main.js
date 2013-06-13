@@ -8,7 +8,7 @@ require.config({
 
 require([
   'app'
-
-], function(App){
-  App.initialize();
+],
+function(App){
+  new App.initialize();
 });

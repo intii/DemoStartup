@@ -6,7 +6,7 @@ define([
   'text!templates/contact.tmpl.html'
 ], function($, _, Backbone, ContactModel, ContactTemplate){
 
-  var contactView = Backbone.View.extend({
+  var ContactView = Backbone.View.extend({
 
     // The DOM Element associated with this view
     el: '.contact-wrapper',
@@ -31,5 +31,5 @@ define([
     }
   });
   // Returns the contactView class
-  return contactView;
+  return ContactView;
 });
