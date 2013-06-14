@@ -16,7 +16,7 @@ define([
       lastname: 'Snow',
       firstname:'John',
       phone: '22223',
-      address: 'wall',
+      address: 'The Wall',
       email: 'jsnow@elsitio.com.ar',
       photo:'http://www.facebooke-mail.com/profile/picture/profile-picture-default.jpg',
       comments: 'no comments'

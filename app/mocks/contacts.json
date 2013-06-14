@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "lastname" : "Snow",
+      "firstname" : "John",
+      "phone"     : "+54(249) 154571987",
+      "email"     : "jsnow@elsitio.com.ar",
+      "photo"     : "http://ia.media-imdb.com/images/M/MV5BMTExNzU3NDM3NDleQTJeQWpwZ15BbWU3MDE0MDU4Mzc@._V1._SX640_SY426_.jpg",
+      "comments": "no comments"
+    },
+    {
+      "lastname" : "Stark",
+      "firstname" : "Arya",
+      "phone"     : "+54(249) 154571982",
+      "email"     : "astrak@elsitio.com.ar",
+      "photo"     : "http://ia.media-imdb.com/images/M/MV5BMTk5MTYwNDc0OF5BMl5BanBnXkFtZTcwOTg2NDg1Nw@@._V1._SX640_SY962_.jpg",
+      "comments": "no comments"
+    },
+    {
+      "lastname" : "Lannister",
+      "firstname" : "Tyrion",
+      "phone"     : "+54(249) 154232982",
+      "email"     : "thenogmo@elsitio.com.ar",
+      "photo"     : "http://ia.media-imdb.com/images/M/MV5BMTQwODk2MjgzNF5BMl5BanBnXkFtZTcwMDgyMTEwOQ@@._V1._SX640_SY426_.jpg",
+      "comments": "no comments"
+    },
+    {
+      "lastname" : "Targaryen",
+      "firstname" : "Daenerys",
+      "phone"     : "+54(249) 154521982",
+      "email"     : "dragonmom@elsitio.com.ar",
+      "photo"     : "http://ia.media-imdb.com/images/M/MV5BMTQ3MzEzMjA1Ml5BMl5BanBnXkFtZTcwMTcyMTEwOQ@@._V1._SX640_SY427_.jpg",
+      "comments": "no comments"
+    },
+    {
+      "lastname" : "Lannister",
+      "firstname" : "Cersei",
+      "phone"     : "+54(249) 154111982",
+      "email"     : "badgirl@elsitio.com.ar",
+      "photo"     : "http://ia.media-imdb.com/images/M/MV5BMjI3NzE4MDE0Nl5BMl5BanBnXkFtZTcwNzMwNTgzNw@@._V1._SX640_SY426_.jpg",
+      "comments": "no comments"
+    },
+    {
+      "lastname" : "",
+      "firstname" : "Ygritte",
+      "phone"     : "+54(249) 154571233",
+      "email"     : "red@elsitio.com.ar",
+      "photo"     : "http://ia.media-imdb.com/images/M/MV5BMTc2ODYwNjUwNl5BMl5BanBnXkFtZTcwMTY2NDg1Nw@@._V1._SX640_SY426_.jpg",
+      "comments": "no comments"
+    }
+  ]
+}
