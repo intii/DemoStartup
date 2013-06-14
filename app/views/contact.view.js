@@ -10,6 +10,7 @@ define([
 
     initialize: function() {
       // Calls the view's render method
+      this.listenTo(this.model, 'hide', this.hideContact);
       this.render();
     },
 
@@ -21,7 +22,12 @@ define([
       // Maintains chainability
       this.el = this.template;
       return this;
+    },
+
+    hideContact: function() {
+      this.$el.hide();
     }
+
   });
   return ContactView;
 });

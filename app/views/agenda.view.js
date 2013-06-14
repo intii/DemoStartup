@@ -14,23 +14,31 @@ define([
 
       events: {
         "click .add-btn":     "addContact",
-        "click .search-btn":  "filterContacts",
+        "keypress .search-input":  "filterContacts",
         "click .delete-btn":  "deleteContact"
       },
 
       initialize: function() {
-        this.listenTo(this.options.contacts, "add", this.appendNewContact);
+        this.contacts = this.options.contacts;
+        this.listenTo(this.contacts, "add", this.appendNewContact);
+        this.listenTo(this.contacts, "remove", this.addAll);
         this.render();
       },
 
       render: function() {
         this.$el.html(this.template);
+        this.searchInput = $('.search-input');
+        this.addAll();
+      },
+
+      addAll: function() {
+        _.each(this.contacts,this.appendNewContact);
       },
 
       addContact: function() {
         //get the data from the fields and create new contact
         var newContact = new Contact();
-        this.options.contacts.add(newContact);
+        this.contacts.add(newContact);
       },
 
       appendNewContact: function(contact) {
@@ -38,8 +46,12 @@ define([
         $('.contact-list').append(newContactView.render().el);
       },
 
-      filterContacts: function() {
-
+      filterContacts: function(key) {
+        if (key.keyCode === 13) {
+          var valueToSearch = this.searchInput.val(),
+              filteredContacts = this.contacts.where({firstname : valueToSearch});
+          this.contacts.set(filteredContacts);
+        }
       },
 
       deleteContact: function() {

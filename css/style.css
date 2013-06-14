@@ -132,3 +132,16 @@ section {
 	margin-top: 5px;
 	line-height: 12px;
 }
+
+.todo-search-container {
+  background: #3498db url("../images/todo/search.png") 92% center no-repeat;
+  background-size: 16px 16px;
+  color: #34495e;
+  height: 45px;
+  margin-top: 5px;
+}
+
+.button-bar .search-input {
+	margin: 3px 30px;
+	width: 170px;
+}
